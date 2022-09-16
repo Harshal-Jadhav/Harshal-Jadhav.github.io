@@ -192,3 +192,11 @@
         color:green;
     }
   } */
+
+  .border{
+    border: none;
+  }
+  .contrib-number {
+    
+    color: white;
+}
