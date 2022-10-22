@@ -508,8 +508,10 @@ mark {
     aspect-ratio: 1.6;
 }
 .img-fluid1 {
-    max-width: 100%;
-    height: auto
+    justify-self: center;
+    max-width: 80%;
+    height: auto;
+    aspect-ratio: 0.9;
 }
 
 @media (max-width:780px) {
