@@ -66,7 +66,7 @@ p.para {
 }
 
 .font-roboto {
-    font-family: var(--roboto);
+    font-family: 'Roboto',sans-serif;
 }
 
 button:focus,
@@ -520,7 +520,7 @@ footer.footer-area .social a:hover>i {
     color: #fff;
     padding: 0;
     margin: 0;
-    font-family: "Raleway", sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 14px;
 }
 
