@@ -162,7 +162,7 @@ html, body{
 /* Banner Area */
 
 .site-main .site-banner {
-    background: url(../img/banner/home-banner.png) no-repeat 0% 50%;
+    background: none;
 }
 
 .site-main .site-banner .site-title h3 {
