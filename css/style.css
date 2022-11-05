@@ -1,13 +1,129 @@
-/* import fonts from fonts.css file */
-/* @import url(./fonts.css);
+/* Global CSS start */
 
 
-/* css variables */
-/* @import url(./partials/_variables.css); */
+/* Global Classes */
 
-/* import global styling */
-/* @import url(./partials/_global.css);  */
+.title-text {
+    font: normal bold 50px/ 72px var(--roboto);
+}
 
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+/* Buttons */
+
+.button {
+    padding: .8rem 2.2rem;
+    font: normal 500 16px/20px var(--roboto);
+    position: relative;
+    border: 3px solid transparent;
+    border-radius: 4px;
+}
+
+.button.primary-button {
+    background: var(--gradient-color);
+    background-clip: padding-box;
+    color: whitesmoke;
+    transition: background .6s ease;
+    box-shadow: var(--box-shadow);
+}
+
+.button.primary-button:hover {
+    background: whitesmoke;
+    background-clip: padding-box;
+    color: black;
+}
+
+.button.primary-button::after,
+.button.secondary-button::after {
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    bottom: -2px;
+    right: -2px;
+    background: var(--gradient-color);
+    content: ' ';
+    z-index: -1;
+    border-radius: 4px;
+}
+
+.button.secondary-button {
+    background: white;
+    background-clip: padding-box;
+    transition: background .6s ease;
+}
+
+.button.secondary-button:hover {
+    background: var(--gradient-color);
+    color: whitesmoke;
+    box-shadow: var(--box-shadow);
+}
+
+p.para {
+    color: var(--text-color);
+    font: normal 500 16px/ 25px var(--roboto);
+}
+
+.font-roboto {
+    font-family: var(--roboto);
+}
+
+button:focus,
+button:active button:hover .btn:active,
+.btn.active {
+    outline: 0px !important;
+    box-shadow: none !important;
+}
+
+.title-h1 {
+    font: normal bold 39px/ 40px var(--roboto);
+}
+
+
+.navbar_fixed {
+    position: fixed;
+    width: 100%;
+    top: -1px;
+    left: 0;
+    right: 0;
+    background: #ffffff;
+    box-shadow: var(--box-shadow);
+    z-index: 999;
+    transition: background 1s ease;
+}
+
+/* Global CSS ENd */
+
+/* Variable css start */
+
+
+
+html, body{
+    margin: 0%;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* CSS Variables */ 
+
+:root{
+    --primary-color: #4458dc;
+    --primary-color2: #854fee;
+    --title-color: #141313;
+    --text-color: #777777;  
+    --border-color: #201f1f17;  
+    --gradient-color: linear-gradient(90deg, #4458dc 0%, #854fee 100%);
+    --shadow-color:  0px 10px 30px rgba(118, 85, 225, 0.3);
+    --box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
+   
+
+    /* font family variables. */ 
+    --roboto: 'Roboto', cursive;
+} 
+/* variable css end */
 
 /* start navigation */
 
@@ -226,17 +342,17 @@
     font-weight: 600;
 }
 
-.site-main .project-area .button-group{
+.site-main .project-area .button-group {
     text-align: center;
 }
 
-.fbtn:hover{
+.fbtn:hover {
     color: #5029bc;
     text-decoration: underline;
     transform: scale(1.2);
 }
 
-.site-main .project-area .active{
+.site-main .project-area .active {
     color: #3e2093;
     transform: scale(1.2);
 }
@@ -541,17 +657,22 @@ footer.footer-area .social a:hover>i {
 
 
 
-.fa-linkedin,.fa-github{
+.fa-linkedin,
+.fa-github {
     font-size: 30px;
     margin-top: 5px;
     margin-left: 12px;
     color: gray;
 }
 
-.fa-linkedin:hover,.fa-github:hover{
+.fa-linkedin:hover,
+.fa-github:hover {
     color: #000;
 }
 
-#about,#skills,#projects,#contact{
+#about,
+#skills,
+#projects,
+#contact {
     padding-top: 8rem;
 }
