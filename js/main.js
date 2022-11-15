@@ -64,6 +64,19 @@ $(document).ready(function () {
 
 });
 
+document.querySelector('.click1').addEventListener("click", () => {
+    document.querySelector("#navbarNav").classList.toggle("show")
+})
+
+document.querySelector('.click2').addEventListener("click", () => {
+    document.querySelector("#navbarNav").classList.toggle("show")
+})
+document.querySelector('.click3').addEventListener("click", () => {
+    document.querySelector("#navbarNav").classList.toggle("show")
+})
+document.querySelector('.click4').addEventListener("click", () => {
+    document.querySelector("#navbarNav").classList.toggle("show")
+})
 
 // Smooth Scrolling Effect
 $(document).ready(function(){
