@@ -62,6 +62,17 @@ $(document).ready(function () {
 
     navbarFixed();
 
+    function clear(){
+        let name = document.getElementById("name");
+        name.innerText="";
+        let email = document.getElementById("email");
+        email.innerText="";
+        let message = document.getElementById("message");
+        message.innerText = "";
+    }
+
+    clear();
+
 });
 
 document.querySelector('.click1').addEventListener("click", () => {

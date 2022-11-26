@@ -368,8 +368,8 @@ html, body{
     font: normal 700 25px/12px var(--roboto);
 }
 
-.site-main .project-area .grid .our-project .img a:hover img {
-    filter: brightness(1.1) drop-shadow(1px 8px 30px #b1afaf);
+.site-main .project-area .grid .our-project .img {
+    /* height: 300px; */
 }
 
 
@@ -536,6 +536,7 @@ footer.footer-area .social a:hover>i {
 }
 
 .project-area .grid {
+    grid-template-columns: repeat(2,1fr);
     row-gap: 20px;
 }
 
@@ -640,6 +641,18 @@ footer.footer-area .social a:hover>i {
 }
 
 .right-side .button input[type="button"] {
+    color: #fff;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    background: #3e2093;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.button input[type="submit"]{
     color: #fff;
     font-size: 18px;
     outline: none;
